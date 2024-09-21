@@ -31,12 +31,46 @@
       <forms id="container">
         <div class="selectdiv">
           <label>
-            <select id="select-matéria">
-              <option selected id="selecionar" name="selecionar" value="">Selecione uma matéria</option>
-              <option id="psicologia" name="psicologia" value="1">Psicologia</option>
-              <option id="sistema-da-informação" name="sistema-da-informação" value="2">Sistema de Informação</option>
-              <option id="nenhum" name="nenhum" value="0">Não tenho curso específico</option>
-            </select>
+          <select id="select-matéria">
+            <option selected id="selecionar" name="selecionar" value="">Selecione uma matéria</option>
+            <option id="administração" name="administração" value="administração">Administração - Bacharelado</option>
+            <option id="agronomia" name="agronomia" value="agronomia">Agronomia - Bacharelado</option>
+            <option id="arquitetura-e-urbanismo" name="arquitetura-e-urbanismo" value="arquitetura-e-urbanismo">Arquitetura e Urbanismo - Bacharelado</option>
+            <option id="artes-visuais" name="artes-visuais" value="artes-visuais">Artes Visuais - Bacharelado</option>
+            <option id="artes-visuais-licenciatura" name="artes-visuais-licenciatura" value="artes-visuais-licenciatura">Artes Visuais - Licenciatura</option>
+            <option id="audiovisual" name="audiovisual" value="audiovisual">Audiovisual - Bacharelado</option>
+            <option id="ciência-da-computação" name="ciência-da-computação" value="ciência-da-computação">Ciência da Computação - Bacharelado</option>
+            <option id="ciências-biológicas" name="ciências-biológicas" value="ciências-biológicas">Ciências Biológicas - Bacharelado</option>
+            <option id="ciências-biológicas-licenciatura" name="ciências-biológicas-licenciatura" value="ciências-biológicas-licenciatura">Ciências Biológicas - Licenciatura</option>
+            <option id="ciências-contábeis" name="ciências-contábeis" value="ciências-contábeis">Ciências Contábeis - Bacharelado</option>
+            <option id="ciências-econômicas" name="ciências-econômicas" value="ciências-econômicas">Ciências Econômicas - Bacharelado</option>
+            <option id="direito" name="direito" value="direito">Direito - Bacharelado</option>
+            <option id="educação-física" name="educação-física" value="educação-física">Educação Física - Bacharelado</option>
+            <option id="educação-física-licenciatura" name="educação-física-licenciatura" value="educação-física-licenciatura">Educação Física - Licenciatura</option>
+            <option id="enfermagem" name="enfermagem" value="enfermagem">Enfermagem - Bacharelado</option>
+            <option id="engenharia-civil" name="engenharia-civil" value="engenharia-civil">Engenharia Civil - Bacharelado</option>
+            <option id="engenharia-de-computação" name="engenharia-de-computação" value="engenharia-de-computação">Engenharia de Computação - Bacharelado</option>
+            <option id="engenharia-de-produção" name="engenharia-de-produção" value="engenharia-de-produção">Engenharia de Produção - Bacharelado</option>
+            <option id="engenharia-de-software" name="engenharia-de-software" value="engenharia-de-software">Engenharia de Software - Bacharelado</option>
+            <option id="engenharia-elétrica" name="engenharia-elétrica" value="engenharia-elétrica">Engenharia Elétrica - Bacharelado</option>
+            <option id="engenharia-química" name="engenharia-química" value="engenharia-química">Engenharia Química - Bacharelado</option>
+            <option id="farmácia" name="farmácia" value="farmácia">Farmácia - Bacharelado</option>
+            <option id="fisioterapia" name="fisioterapia" value="fisioterapia">Fisioterapia - Bacharelado</option>
+            <option id="história" name="história" value="história">História - Licenciatura</option>
+            <option id="licenciatura-intercultural-indígena" name="licenciatura-intercultural-indígena" value="licenciatura-intercultural-indígena">Licenciatura Intercultural Indígena</option>
+            <option id="pedagogia" name="pedagogia" value="pedagogia">Pedagogia - Licenciatura</option>
+            <option id="pedagogia-intercultural-indígena" name="pedagogia-intercultural-indígena" value="pedagogia-intercultural-indígena">Pedagogia Intercultural Indígena</option>
+            <option id="jornalismo" name="jornalismo" value="jornalismo">Jornalismo - Bacharelado</option>
+            <option id="letras-português-espanhol" name="letras-português-espanhol" value="letras-português-espanhol">Letras - Português/Espanhol - Licenciatura</option>
+            <option id="medicina" name="medicina" value="medicina">Medicina - Bacharelado</option>
+            <option id="medicina-veterinária" name="medicina-veterinária" value="medicina-veterinária">Medicina Veterinária - Bacharelado</option>
+            <option id="nutrição" name="nutrição" value="nutrição">Nutrição - Bacharelado</option>
+            <option id="odontologia" name="odontologia" value="odontologia">Odontologia - Bacharelado</option>
+            <option id="psicologia" name="psicologia" value="psicologia">Psicologia - Bacharelado</option>
+            <option id="sistemas-de-informação" name="sistemas-de-informação" value="sistemas-de-informação">Sistemas de Informação - Bacharelado</option>
+            <option id="zootecnia" name="zootecnia" value="zootecnia">Zootecnia - Bacharelado</option>
+            <option id="nenhum" name="nenhum" value="0">Não tenho curso específico</option>
+          </select>
           </label>
         </div>
         <h2>Número de acertos em Linguagens:</h2>
@@ -49,13 +83,29 @@
         <input placeholder="Max:15 " class="input-style" type="number" style="width: 90%;" id="acertos_cn">
         <h2 style="margin-left: -10px;">Nota da Redação:</h2>
         <input placeholder="Max:1000" class="input-style" type="number" style="width: 40%;margin-left: -10px;" id="redacao">
-        <br><br>
+        <h2>Parâmetro de Nota:</h2>
+        <div class="selectdiv">
+          <label>
+            <select id="select-parametro">
+              <option selected id="selecionar" name="selecionar" value="">Selecione um parâmetro</option>
+              <option id="2023" name="2023" value="2023">2024</option>
+              <option id="2023" name="2023" value="2023">2023</option>
+              <option id="2022" name="2022" value="2022">2022</option>
+              <option id="2021" name="2021" value="2021">2021</option>
+              <option id="2020" name="2020" value="2020">2020</option>
+              <option id="2019" name="2019" value="2019">2019</option>
+              <option id="2018" name="2018" value="2018">2018</option>
+            </select>
+          </label>
+        </div>
+        <br><br><br><br>
         <button id="btn-calcular" class="btn" onclick="calcular(1)" style="margin-left: -20px;">Calcular</button>
       </forms>
     </div>
     <span id="nota" style="margin-left: -10px;font-size: 30px;"></span>
     <span id="pesos" style="margin-left: -10px;"></span>
-    <span id="botoes"></span>
+    <span id="botao1" style="display: inline-block;"></span>
+    <span id="botao2" style="display: inline-block;"></span>
   </center>
 </body>
 <script src="script.js"></script>
