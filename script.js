@@ -154,8 +154,6 @@ function calcular(sem_peso) {
   "zootecnia": { peso_red: 2, peso_mat: 1, peso_ling: 1, peso_ch: 1, peso_cn: 3 }
   };
   const pesos_parametro = pesosMaterias[materia];
-  alert(materia);
-  alert(pesos_parametro);
   if (pesos_parametro) {
     peso_red = pesos_parametro.peso_red;
     peso_mat = pesos_parametro.peso_mat;
@@ -180,7 +178,7 @@ function calcular(sem_peso) {
     (peso_ling + peso_mat + peso_cn + peso_ch + peso_red);
   var pesos =
     "<span>Curso: " +
-    materia.toUpperCase().replace("-", " ") +"</span><br><br>" +
+    materia.toUpperCase().replace("-", " ").replaceAll("_", " ") +"</span><br><br>" +
     "<span>Peso de Linguagens: </span><span>" +
     peso_ling +
     "</span><span>|  Peso de Matemática: </span><span>" +
@@ -220,11 +218,11 @@ function calcular(sem_peso) {
   var btn_sem_peso = document.createElement("button");
   btn_sem_peso.textContent = "Calcular sem pesos";
   btn_sem_peso.id = "btn_sem_peso";
-  btn_sem_peso.style.padding = "10px";
+  btn_sem_peso.style.padding = "5px";
   btn_sem_peso.style.position = "relative";
-  btn_sem_peso.style.top = "22px";
-  btn_sem_peso.style.width = "150px";
-  btn_sem_peso.style.height = "60px";
+  btn_sem_peso.style.top = "0px";
+  btn_sem_peso.style.width = "250px";
+  btn_sem_peso.style.height = "40px";
   btn_sem_peso.className = "btn";
   btn_sem_peso.onclick = function calcularsempeso() {
     var nota =
