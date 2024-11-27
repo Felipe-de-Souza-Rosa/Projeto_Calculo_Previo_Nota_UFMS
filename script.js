@@ -179,19 +179,19 @@ function calcular(sem_peso) {
   var pesos =
     "<span>Curso: " +
     materia.toUpperCase().replace("-", " ").replaceAll("_", " ") +"</span><br><br>" +
-    "<span>Peso de Linguagens: </span><span>" +
+    "<h3 style='width:80%;'><span>Peso de Linguagens: </span><span>" +
     peso_ling +
     "</span><span>|  Peso de Matemática: </span><span>" +
     peso_mat +
     "</span><br><span>Peso de Ciências Humanas: </span><span style='display:inline'>" +
     peso_ch +
-    "</span><span>|  Peso de Ciências da natureza: </span><span> " +
+    "</span><span>| <br> Peso de Ciências da natureza: </span><span> " +
     peso_cn +
     "</span><br><span>Peso de Redação: </span><span>" +
     peso_red +
-    "</span><br><br>";
+    "</span></h3>";
   var nota =
-    "<br><h2>Notas com pesos:</h2><span>Nota de Linguagens: </span><span>" +
+    "<h2 style='margin-top: -30px;'>Notas com pesos:</h2><span>Nota de Linguagens: </span><span>" +
     nota_ling.toFixed(2) +
     "</span><br><span>Nota de Matemática: </span><span>" +
     nota_mat.toFixed(2) +
@@ -226,7 +226,7 @@ function calcular(sem_peso) {
   btn_sem_peso.className = "btn";
   btn_sem_peso.onclick = function calcularsempeso() {
     var nota =
-      "<br><h2>Notas com pesos:</h2><span>Nota de Linguagens: </span><span>" +
+      "<br><h2>Notas sem pesos:</h2><span>Nota de Linguagens: </span><span>" +
       (nota_ling / peso_ling).toFixed(2) +
       "</span><br><span>Nota de Matemática: </span><span>" +
       (nota_mat / peso_mat).toFixed(2) +
@@ -236,7 +236,7 @@ function calcular(sem_peso) {
       (nota_cn / peso_cn).toFixed(2) +
       "</span><br><span>Nota de Redação: </span><span>" +
       (nota_red / peso_red).toFixed(2) +
-      "</span><br><span>Nota Final com pesos: </span><span>" +
+      "</span><br><span>Nota Final sem pesos: </span><span>" +
       nota_final.toFixed(2) +
       "</span><br><br>";
     document.getElementById("nota").innerHTML = nota;
